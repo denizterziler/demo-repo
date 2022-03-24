@@ -10,3 +10,17 @@ print("Words start with 'o': ")
 for letter2 in txt :
     if letter2[0] == "o" :
         print(letter2)
+        
+word = input("Enter a word to search: ")
+
+for letter3 in txt :
+    if letter3 == word :
+        print("Word found!")
+        flag = True;
+        break
+
+    else :
+        flag = False;
+
+if not flag:
+    print("Not found!")
