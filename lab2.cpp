@@ -17,5 +17,27 @@ int main()
         cout << txt[i] << endl;
     }
    }
+   
+   string word;
+   cout << "Enter to word to search: " << endl;
+   cin>>word;
+   bool flag;
+
+   for (int i = 0 ; i < 1000; i++)
+    {
+        if (txt[i] == word)
+        {
+            cout << "Word found!" << endl;
+            flag = true;
+            break;
+        }
+        else
+        {
+            flag = false;
+        }
+    }
+    if(flag == false){
+        cout << "Not in the array " << endl;
+    }
     return 0;
 }
